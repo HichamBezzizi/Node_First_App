@@ -4,6 +4,7 @@ const file_path = "./DB/users.json";
 module.exports = app => {
     app.get('/', function(req, res){
         res.sendfile("index.html");
+        //res.sendFile(path.resolve('index.html'));
     });
 
   app.put("/user", (req, res) => {
